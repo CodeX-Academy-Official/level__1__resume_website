@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+}
+
+.hero-section {
+  padding: 20px;
+  background-color: darkseagreen;
+  height: 50vh;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  list-style-type: none;
+}
+
+.menu-item {
+  color: white;
+  padding: 4px;
+}
+
+.active {
+  border: 1px solid white;
+}
+
+.hero-section-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
