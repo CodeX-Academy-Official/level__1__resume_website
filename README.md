@@ -1,4 +1,4 @@
-# Chimer
+# Resume Website
 A sample level 1 capstone project.
 
 ## Introduction
