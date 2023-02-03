@@ -7,6 +7,7 @@
 }
 
 main {
+  padding-bottom: 5000px;
 }
 
 .hero-section {
@@ -43,4 +44,44 @@ main {
   align-items: center;
   color: white;
   height: 100%;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  margin-top: 20px;
+  /* background-color: bisque; */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.skill {
+  list-style-type: none;
+  background-color: cadetblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
