@@ -20,6 +20,8 @@ main {
   display: flex;
   justify-content: end;
   align-items: center;
+  background-color: darkseagreen;
+  padding: 10px;
 }
 
 .menu {
