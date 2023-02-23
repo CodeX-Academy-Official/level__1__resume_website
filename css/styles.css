@@ -34,6 +34,12 @@ main {
 .menu-item {
   color: white;
   padding: 4px;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.menu-item > a {
+  all: unset;
 }
 
 .active {

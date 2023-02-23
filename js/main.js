@@ -1,47 +1,35 @@
 const menuItems = [
   {
     label: "Home",
+    href: "/index.html",
   },
   {
-    label: "Work",
+    label: "Skills",
+    href: "/index.html/#skills",
   },
   {
-    label: "Process",
-  },
-  {
-    label: "Kudos",
+    label: "About",
+    href: "/about.html"
   },
   {
     label: "Connect",
+    href: "/contact-me.html"
   },
 ];
 
-// function renderHeader() {
-//   return `
-//     <nav>
-//       <ul class="menu">
-//         <li class="menu-item active">Home</li>
-//         <li class="menu-item">Work</li>
-//         <li class="menu-item">Process</li>
-//         <li class="menu-item">Kudos</li>
-//         <li class="menu-item">Connect</li>
-//       </ul>
-//     </nav>
-//   `;
-// }
-
 function renderHeader() {
-  return `
+  const header = document.querySelector("#header");
+  header.innerHTML = `
     <nav>
       <ul class="menu">
-        ${menuItems.map(item => {
-          return `<li class="menu-item">${item.label}</li>`
-        })}
+        ${menuItems.map((item, idx) => {
+          return `<li class="menu-item${idx === 0 ? " active" : ""}">
+                    <a href=${item.href}>${item.label}</a>
+                  </li>`
+        }).join("")}
       </ul>
     </nav>
   `;
 }
 
-const header = document.querySelector("#header");
-console.log(header);
-header.innerHTML = renderHeader();
+renderHeader();
