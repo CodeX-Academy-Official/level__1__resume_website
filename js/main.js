@@ -5,7 +5,7 @@ const menuItems = [
   },
   {
     label: "Skills",
-    href: "/index.html/#skills",
+    href: "/#skills",
   },
   {
     label: "About",

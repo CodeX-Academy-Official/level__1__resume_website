@@ -1,18 +1,23 @@
+:root {
+  --primary-bg-color: lavender;
+  /* --primary-text-color: navy; */
+  /* --primary-text-color: darkblue; */
+  --primary-text-color: darkslategrey;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-main {
-  padding-bottom: 5000px;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--primary-text-color);
 }
 
 .hero-section {
   padding: 20px;
-  background-color: darkseagreen;
+  background-color: var(--primary-bg-color);
   height: 50vh;
 }
 
@@ -20,7 +25,7 @@ main {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: darkseagreen;
+  background-color: var(--primary-bg-color);
   padding: 10px;
 }
 
@@ -32,10 +37,12 @@ main {
 }
 
 .menu-item {
-  color: white;
+  color: var(--primary-text-color);
   padding: 4px;
   cursor: pointer;
   border-radius: 30%;
+  font-size: large;
+  font-weight: 100;
 }
 
 .menu-item > a {
@@ -43,14 +50,15 @@ main {
 }
 
 .active {
-  border: 1px solid white;
+  border: 1px solid var(--primary-text-color);
+  font-weight: 600;
 }
 
 .hero-section-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--primary-text-color);
   height: 100%;
 }
 
@@ -59,8 +67,6 @@ main {
   justify-content: center;
   align-items: flex-start;
   height: 80vh;
-  margin-top: 20px;
-  /* background-color: bisque; */
 }
 
 .skills-container {
@@ -69,6 +75,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 40px;
+  height: 100vh;
 }
 
 .skills {
@@ -79,12 +87,13 @@ main {
 
 .skill {
   list-style-type: none;
-  background-color: cadetblue;
+  background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px;
   font-size: large;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .about-section {
@@ -92,4 +101,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* gap: 20px; */
+  border: 2px solid green; /* For guideline */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red; /* For guideline */
+  max-width: 1000px;
+}
+
+.about-text {
+  padding: 40px;
+}
+
+.about-text > p {
+  text-align: left;
 }
