@@ -101,8 +101,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
-  border: 2px solid green; /* For guideline */
+  margin-top: 20px;
 }
 
 .about-content {
@@ -110,14 +109,64 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px solid red; /* For guideline */
   max-width: 1000px;
+  height: calc(100vh - 120px);
 }
 
 .about-text {
   padding: 40px;
+  font-size: x-large;
 }
 
 .about-text > p {
   text-align: left;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-me-article {
+  padding: 10%;
+  font-size: xx-large;
+}
+
+.mobile {
+  color: darkorchid;
+  font-size: larger;
+}
+
+.hovering-number:hover {
+  background-color: mediumvioletred;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--primary-bg-color);
+  border-radius: 10px;
+}
+
+.back-to-top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+.back-to-top-container:hover {
+  cursor: pointer;
+}
+.back-to-top {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+
 }

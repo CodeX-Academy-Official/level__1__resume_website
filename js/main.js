@@ -23,7 +23,7 @@ function renderHeader() {
     <nav>
       <ul class="menu">
         ${menuItems.map((item, idx) => {
-          return `<li class="menu-item${idx === 0 ? " active" : ""}">
+          return `<li class="menu-item">
                     <a href=${item.href}>${item.label}</a>
                   </li>`
         }).join("")}
